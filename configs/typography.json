@@ -1,0 +1,53 @@
+{
+  "regular": {
+    "breakpoints": ["576px", "768px", "992px", "1200px", "1600px"],
+    "fontFamily": "Droid Sans,Helvetica Neue,sans-serif",
+    "sizes": {
+      "1": [
+        { "breakpointIndex": null, "fontSize": "12px", "lineHeight": "20px" },
+        { "breakpointIndex": 4, "fontSize": "14px", "lineHeight": "22px" }
+      ],
+      "2": [
+        { "breakpointIndex": null, "fontSize": "14px", "lineHeight": "22px" },
+        { "breakpointIndex": 4, "fontSize": "16px", "lineHeight": "24px" }
+      ],
+      "3": [
+        { "breakpointIndex": null, "fontSize": "16px", "lineHeight": "24px" },
+        { "breakpointIndex": 4, "fontSize": "20px", "lineHeight": "28px" }
+      ],
+      "4": [
+        { "breakpointIndex": null, "fontSize": "20px", "lineHeight": "28px" },
+        { "breakpointIndex": 4, "fontSize": "24px", "lineHeight": "32px" }
+      ],
+      "5": [
+        { "breakpointIndex": null, "fontSize": "24px", "lineHeight": "32px" },
+        { "breakpointIndex": 4, "fontSize": "30px", "lineHeight": "38px" }
+      ],
+      "6": [
+        { "breakpointIndex": null, "fontSize": "30px", "lineHeight": "38px" },
+        { "breakpointIndex": 4, "fontSize": "38px", "lineHeight": "46px" }
+      ],
+      "7": [
+        { "breakpointIndex": null, "fontSize": "38px", "lineHeight": "46px" },
+        { "breakpointIndex": 4, "fontSize": "46px", "lineHeight": "54px" }
+      ],
+      "8": [
+        { "breakpointIndex": null, "fontSize": "38px", "lineHeight": "46px" },
+        { "breakpointIndex": 1, "fontSize": "46px", "lineHeight": "54px" },
+        { "breakpointIndex": 4, "fontSize": "56px", "lineHeight": "64px" }
+      ],
+      "9": [
+        { "breakpointIndex": null, "fontSize": "38px", "lineHeight": "46px" },
+        { "breakpointIndex": 1, "fontSize": "46px", "lineHeight": "54px" },
+        { "breakpointIndex": 2, "fontSize": "56px", "lineHeight": "64px" },
+        { "breakpointIndex": 4, "fontSize": "68px", "lineHeight": "76px" }
+      ],
+      "10": [
+        { "breakpointIndex": null, "fontSize": "38px", "lineHeight": "46px" },
+        { "breakpointIndex": 2, "fontSize": "56px", "lineHeight": "64px" },
+        { "breakpointIndex": 3, "fontSize": "68px", "lineHeight": "76px" },
+        { "breakpointIndex": 4, "fontSize": "76px", "lineHeight": "85px" }
+      ]
+    }
+  }
+}
