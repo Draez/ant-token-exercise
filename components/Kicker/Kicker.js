@@ -13,9 +13,15 @@ const Kicker = props => {
     <ElementWrapper>
       <Space size="middle" direction="vertical">
         <Image src="https://via.placeholder.com/1920x1080/eee?text=16:9" />
-          <Typography elementType="h2" size="5" type="regular" weight="600" padding={padding}>
-            {title}
-          </Typography>
+        <Typography
+          elementType="h2"
+          size="5"
+          type="regular"
+          weight="600"
+          padding={padding}
+        >
+          {title}
+        </Typography>
       </Space>
       <Space size="small" direction="vertical">
         <Typography elementType="p" size="1" type="regular" padding={padding}>

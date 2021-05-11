@@ -14,7 +14,13 @@ export const globalStyles = (
         background: white;
         min-height: 100%;
       }
-      h1,h2,h3,h4,h5,h6,p{
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
         color: #595959;
       }
     `}
@@ -28,3 +34,6 @@ export const Container = styled.div`
 `;
 
 export const ElementWrapper = styled.div``;
+export const MarginWrapper = styled.div`
+  margin-bottom: 16px;
+`;

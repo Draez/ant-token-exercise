@@ -1,14 +1,20 @@
 import Head from "next/head";
-import { Image, Divider, Grid, Row, Space, Col } from "antd";
+import { Divider, Grid, Row, Space, Col, Tabs } from "antd";
 import Typography from "@namia/typography";
 import styles from "../styles/Home.module.css";
-import { Container, ElementWrapper } from "../styles/styles";
+import { Alert } from "../components/AntComponents";
 import Kicker from "../components/Kicker";
 import KickerRow from "../components/KickerRow";
 import MainImage from "../components/MainImage";
 import KickerColumn from "../components/KickerColumn";
 import ListOne from "../components/ListOne";
+import Menu from "../components/Menu";
+import Ad from "../components/Ad";
+import ButtonSelector from "../components/ButtonSelector";
 import { ROW_GUTTER } from "../configs/constants";
+import { Container, ElementWrapper, MarginWrapper } from "../styles/styles";
+
+const { TabPane } = Tabs;
 
 export default function Home() {
   const { useBreakpoint } = Grid;
@@ -19,7 +25,30 @@ export default function Home() {
       <Head>
         <title>Namia + ant.design</title>
         <link rel="icon" href="/favicon.ico" />
+        <style>
+          @import
+          url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap');
+          @import
+          url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        </style>
       </Head>
+      <Alert
+        closable
+        message={
+          <Typography elementType="h2" size="3" type="regular" weight={"900"}>
+            Kestotilaukset nyt -20%
+          </Typography>
+        }
+        type="info"
+        description={
+          <Typography elementType="p" size="2" type="roboto">
+            Interactively monetize corporate alignments and fully tested niche
+            markets.
+          </Typography>
+        }
+      />
+      <Ad />
+      <Menu />
       <Container>
         <Row gutter={[ROW_GUTTER]} justify="center">
           <Col xs={24} md={6} order={md ? 0 : 1}>
@@ -40,11 +69,102 @@ export default function Home() {
             />
           </Col>
           <Col xs={24} md={6} order={2}>
-            <ListOne title="List01a" text="Paragraph text" />
-            <ListOne title="List02a" text="Paragraph text" />
-            <ListOne title="List03a" text="Paragraph text" />
-            <ListOne title="List04a" text="Paragraph text" />
-            <ListOne title="List05a" text="Paragraph text" />
+            <Tabs
+              defaultActiveKey="1"
+              onChange={key => {
+                console.log("key: ", key);
+              }}
+            >
+              <TabPane
+                tab={
+                  <Typography elementType="p" size="1" type="roboto">
+                    Uusimmat
+                  </Typography>
+                }
+                key="1"
+              >
+                <MarginWrapper>
+                  <ButtonSelector />
+                </MarginWrapper>
+                <ListOne
+                  title="Uusimmat 01a otsikko"
+                  category="Urheilu"
+                  date="10.5.2021"
+                />
+                <ListOne
+                  title="Uusimmat 02a otsikko pitkä sellainen, jossa paljon kirjaimia"
+                  category="Urheilu"
+                  date="10.5.2021"
+                />
+                <ListOne
+                  title="Uusimmat 03a otsikko"
+                  category="Urheilu"
+                  date="10.5.2021"
+                />
+                <ListOne
+                  title="Uusimmat 04a otsikko vähän tekstiä lisää"
+                  category="Urheilu"
+                  date="10.5.2021"
+                />
+                <ListOne
+                  title="Uusimmat 05a otsikko"
+                  category="Urheilu"
+                  date="10.5.2021"
+                />
+              </TabPane>
+              <TabPane
+                tab={
+                  <Typography elementType="p" size="1" type="roboto">
+                    Luetuimmat
+                  </Typography>
+                }
+                key="2"
+              >
+                <MarginWrapper>
+                  <ButtonSelector
+                    buttonData={[
+                      {
+                        key: "1-hour",
+                        title: "1h"
+                      },
+                      {
+                        key: "24-hours",
+                        title: "24h"
+                      },
+                      {
+                        key: "7-days",
+                        title: "7 päivää"
+                      }
+                    ]}
+                  />
+                </MarginWrapper>
+                <ListOne
+                  title="Luetuimmat 01a"
+                  category="Urheilu"
+                  date="10.5.2021"
+                />
+                <ListOne
+                  title="Luetuimmat 02a"
+                  category="Urheilu"
+                  date="10.5.2021"
+                />
+                <ListOne
+                  title="Luetuimmat 03a"
+                  category="Urheilu"
+                  date="10.5.2021"
+                />
+                <ListOne
+                  title="Luetuimmat 04a"
+                  category="Urheilu"
+                  date="10.5.2021"
+                />
+                <ListOne
+                  title="Luetuimmat 05a"
+                  category="Urheilu"
+                  date="10.5.2021"
+                />
+              </TabPane>
+            </Tabs>
           </Col>
           <Col xs={24} order={2}>
             <Divider />
