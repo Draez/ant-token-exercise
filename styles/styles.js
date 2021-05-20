@@ -37,3 +37,8 @@ export const ElementWrapper = styled.div``;
 export const MarginWrapper = styled.div`
   margin-bottom: 16px;
 `;
+export const ChildColorWrapper = styled.div`
+  > * {
+    color: ${props => props.color || "inherit"};
+  }
+`;

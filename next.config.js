@@ -6,6 +6,7 @@ module.exports = withAntdLess({
   // optional
   modifyVars: {
     "@font-family": "Merriweather, sans-serif",
+    "@error-color": "#E72347",
     "@blue-base": "rgba(15, 121, 250, 1)",
     "@blue-01": "rgba(235, 244, 255, 1)",
     "@blue-02": "rgba(204, 227, 255, 1)",
