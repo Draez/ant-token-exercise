@@ -13,7 +13,7 @@ const KickerRow = props => {
       <Col xs={24} md={12} order={md ? 1 : 2}>
         <Space size="small" direction="vertical">
           <Typography elementType="h4" size="4" type="regular" weight="600">
-            {title}
+            {title} demo
           </Typography>
           <Typography elementType="p" size="1" type="regular">
             {text}
